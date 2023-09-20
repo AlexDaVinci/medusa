@@ -22,7 +22,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.medusa"
     },
     "web": {
       "bundler": "metro",
@@ -34,6 +38,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d3103cce-60d9-413c-a8e7-c9c2d39558c1"
+      }
     }
   }
 }

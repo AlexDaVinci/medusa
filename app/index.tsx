@@ -11,7 +11,7 @@ const App = () => {
   return (
     <AuthProvider>
     <NavigationContainer independent={true}>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false,}}>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Form" component={FormScreen} />
       </Stack.Navigator>
